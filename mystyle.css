@@ -1,0 +1,139 @@
+/* Set font and background color for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Style the input label */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the input textarea */
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Style the button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+/* Add animation to the button */
+button:not([disabled]):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the container for each person's numbers */
+div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the person's name */
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the numbers */
+div[id$="-numbers"] {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Style the copy button */
+.copy-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #ccc;
+}
+
+.copy-btn.green {
+  background-color: #4CAF50;
+  transition: background-color 0.5s ease-out;
+}
+
+/* Add animation to the copy button */
+.copy-btn:not([disabled]):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the stop button */
+#stop-check-btn {
+  color: #fffafa;
+  background-color: red;
+}
+
+/* Add animation to the stop button */
+#stop-check-btn:not([disabled]):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Disable opacity and cursor for disabled buttons */
+button[disabled], .copy-btn[disabled], #stop-check-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
